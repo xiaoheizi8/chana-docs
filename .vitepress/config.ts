@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "ChaNa Registry",
   description: "超高性能服务注册中心 - 超越Consul/Zookeeper/Eureka/Nacos",
+  base: "/chana-docs/",
   head: [
     ['link', { rel: 'icon', href: '/logo.svg' }]
   ],
