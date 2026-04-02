@@ -16,11 +16,14 @@ jobs:
           node-version: 20
           
       - name: Install dependencies
-        run: npm install
-        
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          npm install
+          
       - name: Build docs
         run: npx vitepress build docs
-        
+          
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
