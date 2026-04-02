@@ -1,6 +1,7 @@
 {
   "name": "chana-docs",
   "version": "1.0.0",
+  "type": "module",
   "description": "ChaNa Registry Documentation",
   "scripts": {
     "docs:dev": "vitepress dev docs",
